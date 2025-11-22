@@ -1,0 +1,26 @@
+:root{
+    --bs-primary:#483BCB !important;
+    --bs-nav-link-font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+    .side-header{
+        width: 346px;
+    }
+}
+@media (min-width: 992px) {
+
+    .search-box{
+        width: 300px;
+        height: 40px;
+    }
+    }
+.bg-dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.fs-body-small{
+    font-size: 0.7rem !important;
+    line-height: 140% !important;
+    font-weight: normal !important;
+    text-align: center;
+}
