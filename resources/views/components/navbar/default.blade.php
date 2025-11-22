@@ -13,7 +13,7 @@
                 </div>
                 {{-- Search Box --}}
                 <div class="d-lg-flex d-none align-items-center">
-                    <x-inputs.search-box type="header" />
+                    <x-inputs.search-box type="navbar" />
                 </div>
                 {{-- Info --}}
                 <div class="d-lg-flex justify-content-end align-items-center d-none side-header">
@@ -42,41 +42,41 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
 
-                    <x-navbar.nav-item-mega-menu>
+                    <x-navbar.mega-menu.nav-item>
                         <x-slot:title>
                             Layanan Publik
                         </x-slot>
                         <x-slot:content>
-                            <x-navbar.mega-menu-contents.layanan-publik />
+                            <x-navbar.mega-menu.contents.layanan-publik />
                         </x-slot>
-                    </x-navbar.nav-item-mega-menu>
+                    </x-navbar.mega-menu.nav-item>
 
-                    <x-navbar.nav-item-mega-menu>
+                    <x-navbar.mega-menu.nav-item>
                         <x-slot:title>
                             Pembayaran & Transaksi
                         </x-slot>
                         <x-slot:content>
-                            @include('components.navbar.mega-menu-contents.pembayaran-transaksi')
+                            <x-navbar.mega-menu.contents.layanan-publik />
                         </x-slot>
-                    </x-navbar.nav-item-mega-menu>
+                    </x-navbar.mega-menu.nav-item>
 
-                    <x-navbar.nav-item-mega-menu>
+                    <x-navbar.mega-menu.nav-item>
                         <x-slot:title>
                             Data & Informasi Publik
                         </x-slot>
                         <x-slot:content>
-                            @include('components.navbar.mega-menu-contents.layanan-publik')
+                            <x-navbar.mega-menu.contents.layanan-publik />
                         </x-slot>
-                    </x-navbar.nav-item-mega-menu>
+                    </x-navbar.mega-menu.nav-item>
 
-                    <x-navbar.nav-item-mega-menu>
+                    <x-navbar.mega-menu.nav-item>
                         <x-slot:title>
                             Profil Daerah & Pemerintahan
                         </x-slot>
                         <x-slot:content>
-                            @include('components.navbar.mega-menu-contents.layanan-publik')
+                            <x-navbar.mega-menu.contents.layanan-publik />
                         </x-slot>
-                    </x-navbar.nav-item-mega-menu>
+                    </x-navbar.mega-menu.nav-item>
                 </ul>
 
             </div>

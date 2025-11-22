@@ -1,7 +1,7 @@
 {{--
 /**
  *
- * @props string $type can contains either "default" or "header".
+ * @props string $type can contains either "default" or "navbar".
  * where the default type does not include the ‘Ctrl + K’ command
  */
  --}}
@@ -17,7 +17,7 @@
             <i class="bi bi-search GlobalSearch-Search-Icon" width="20" height="20"></i>
             <span class="GlobalSearch-Button-Placeholder">Search</span>
         </span>
-        @if ($type == 'header')
+        @if ($type == 'navbar')
             <span class="GlobalSearch-Button-Keys d-xl-flex d-none">
                 <kbd class="GlobalSearch-Button-Key fs-body-small">
                     CTRL + K
