@@ -17,9 +17,11 @@
                 </div>
                 {{-- Info --}}
                 <div class="d-lg-flex justify-content-end align-items-center d-none side-header">
-                    <small
-                        class="p-2 px-3 rounded-2 bg-body-tertiary fs-body-small">{{ 'Terakhir Diperbarui : ' . $infoUpdate }}
-                        <i class="bi bi-info-circle-fill text-primary"></i>
+                    <small class="p-2 px-3 rounded-2 bg-body-tertiary fs-body-small d-flex align-items-center gap-2">
+                        <span>{{ 'Terakhir Diperbarui : ' . $infoUpdate }}</span>
+                        <button class="btn border-0 p-0">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                        </button>
                     </small>
 
                 </div>
@@ -56,7 +58,7 @@
                             Pembayaran & Transaksi
                         </x-slot>
                         <x-slot:content>
-                            <x-navbar.mega-menu.contents.layanan-publik />
+                            <x-navbar.mega-menu.contents.pembayaran-transaksi />
                         </x-slot>
                     </x-navbar.mega-menu.nav-item>
 
@@ -65,7 +67,7 @@
                             Data & Informasi Publik
                         </x-slot>
                         <x-slot:content>
-                            <x-navbar.mega-menu.contents.layanan-publik />
+                            <x-navbar.mega-menu.contents.data-informasi-publik />
                         </x-slot>
                     </x-navbar.mega-menu.nav-item>
 
@@ -74,7 +76,7 @@
                             Profil Daerah & Pemerintahan
                         </x-slot>
                         <x-slot:content>
-                            <x-navbar.mega-menu.contents.layanan-publik />
+                            <x-navbar.mega-menu.contents.profil-daerah-pemerintahan />
                         </x-slot>
                     </x-navbar.mega-menu.nav-item>
                 </ul>

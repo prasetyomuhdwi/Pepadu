@@ -8,10 +8,13 @@
      * @items format [href][title][icon (bootstrap icon)][description]
      */
     $items = [
-        ['#', 'Bayar Pajak', '', 'ini description'],
-        ['#', 'E-Retribusi', '', 'ini description'],
-        ['#', 'E-Ticketing Event', '', 'ini description'],
-        ['#', 'Jadwal Samsat Keliling', '', 'ini description'],
+        ['#', 'APBD & Realisasi', '', 'ini description'],
+        ['#', 'Pengadaan (LPSE)', '', 'ini description'],
+        ['#', 'Kinerja PD (SAKIP)', '', 'ini description'],
+        ['#', 'Nilai SPBE', '', 'ini description'],
+        ['#', 'Statistik Daerah', '', 'ini description'],
+        ['#', 'Open Data', '', 'ini description'],
+        ['#', 'Survei Kepuasan', '', 'ini description'],
     ];
 @endphp
 

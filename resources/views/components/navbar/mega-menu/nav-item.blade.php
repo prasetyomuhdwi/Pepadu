@@ -4,7 +4,7 @@
         {{ $title }}
     </a>
 
-    <div class="dropdown-menu border-0 p-0 shadow container-fluid bg-dropdown-menu" aria-labelledby="megaMenuLink">
+    <div class="dropdown-menu border-0 p-0 shadow-sm container-fluid bg-dropdown-menu" aria-labelledby="megaMenuLink">
         {{ $content }}
     </div>
 </li>
