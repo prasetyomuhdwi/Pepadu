@@ -14,5 +14,15 @@
                 event.preventDefault();
             }
         });
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const myDefaultAllowList = bootstrap.Tooltip.Default.allowList
+        myDefaultAllowList.i = ['data-bs-title']
+        myDefaultAllowList.ul = ['data-bs-content']
+        myDefaultAllowList.li = ['data-bs-content']
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl, {
+            allowList: myDefaultAllowList,
+            html: true,
+            trigger: 'focus'
+        }))
     </script>
 @endsection

@@ -1,6 +1,7 @@
 :root{
     --bs-primary:#483BCB !important;
     --bs-nav-link-font-size: 0.8rem;
+    --bs-white:#FBFBFE;
 }
 
 @media (min-width: 1200px) {
@@ -23,4 +24,21 @@
     line-height: 140% !important;
     font-weight: normal !important;
     text-align: center;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 324px;
+  --bs-popover-border-color: var(--bs-primary);
+  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after{
+    border-bottom-color: var(--bs-primary);
+}
+
+.logo-brand-color{
+    color: var(--bs-primary);
 }
