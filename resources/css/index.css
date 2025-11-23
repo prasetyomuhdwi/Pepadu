@@ -42,3 +42,7 @@
 .logo-brand-color{
     color: var(--bs-primary);
 }
+
+.swiper {
+  height: 70px;
+}
