@@ -30,19 +30,5 @@
             </div>
         @endforeach
 
-        {{-- <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3">
-            Slide 2
-        </div>
-        <div class="swiper-slide" role="group" aria-label="3 / 3">
-            Slide 3
-        </div> --}}
     </div>
-
-    {{-- <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal w-100"><span
-            class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span
-            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
-            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
-            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
-            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span> --}}
 </div>

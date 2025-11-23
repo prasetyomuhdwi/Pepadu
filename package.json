@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "npm-run-all --parallel development-server watch",
         "development-server": "php artisan serve",
+        "pint": "php ./vendor/bin/pint -v",
         "watch": "npm run dev_vite",
         "build": "vite build",
         "dev_vite": "vite",

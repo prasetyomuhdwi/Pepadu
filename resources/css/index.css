@@ -1,5 +1,6 @@
 :root{
     --bs-primary:#483BCB !important;
+    --bs-secondary:#F2AC84 !important;
     --bs-nav-link-font-size: 0.8rem;
     --bs-white:#FBFBFE;
 }
