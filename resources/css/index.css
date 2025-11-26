@@ -3,6 +3,7 @@
     --bs-secondary:#F2AC84 !important;
     --bs-nav-link-font-size: 0.8rem;
     --bs-white:#FBFBFE;
+    --card-border-color: #6f42c1;
 }
 
 @media (min-width: 1200px) {
@@ -11,14 +12,13 @@
     }
 }
 @media (min-width: 992px) {
-
     .search-box{
         width: 300px;
         height: 40px;
     }
-    }
+}
 .bg-dropdown-menu{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #EAEAFB;
 }
 .fs-body-small{
     font-size: 0.7rem !important;
@@ -46,4 +46,115 @@
 
 .swiper {
   height: 70px;
+}
+
+@media (min-width: 992px) {
+    .hero{
+        margin-top:127px;
+        height: 520px;
+    }
+    .bg-hero{
+        left:22%;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+.hero{
+    margin-top:127px;
+    height: 420px;
+}
+.bg-hero{
+    left:22%;
+    width: 1000px;
+    height: 700px;
+}
+.nav-item{
+    background-color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item .active{
+    background-color: var(--bs-primary) !important;
+    border-radius: var(--bs-border-radius);
+}
+.nav-link.active{
+    color: #fff !important;
+}
+
+.nav-item:hover{
+    background-color: var(--bs-primary) !important;
+    border-radius: var(--bs-border-radius);
+}
+
+.nav-item:hover .nav-link{
+    color: #fff;
+}
+
+
+.card-nav-item{
+    height: 154px;
+    width: 318px !important;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-nav-item .link-icon {
+    opacity: 0; /* Sembunyikan ikon secara default */
+    transform: translateX(-5px); /* Geser sedikit ke kiri untuk transisi */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: var(--card-border-color); /* Berikan warna yang sama dengan border hover */
+}
+
+.card-nav-item:hover {
+    /* 1. Meningkatkan Shadow/Mengubah Border */
+    border-color: var(--card-border-color); /* Menambahkan border berwarna */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Shadow lebih menonjol */
+
+    /* 2. Mengubah Warna Teks Link (Opsional, agar terlihat menonjol) */
+    color: var(--card-border-color) !important;
+}
+
+.card-nav-item:hover .link-icon {
+    opacity: 1; /* Tampilkan ikon */
+    transform: translateX(0); /* Tarik kembali ke posisi normal */
+}
+
+.card-nav-item:hover .link-text {
+    color: var(--card-border-color) !important;
+}
+.card-nav-item .icon-container{
+    width: 40px;
+    height: 40px;
+}
+.card-nav-item.filler{
+    background-color: transparent;
+    box-shadow: none;
+}
+.card-nav-item:hover.filler{
+     border: transparent;
+    box-shadow: none;
+}
+.card-nav-item .fs-title{
+    font-size: 1.20rem!important;
+}
+
+.w-80{
+    width: 80% !important;
+}
+
+.card-nav-item .desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 252px;
+    max-height: 75px;
+    /* Optional: jika ingin memotong teks yang terlalu panjang */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
 }

@@ -18,7 +18,7 @@
 
 <body style="height:120vh">
     <div class="container-fluid p-0">
-        <nav class="container-md sticky-md-top">
+        <nav class="container-md sticky-top">
             @yield('navbar')
         </nav>
 

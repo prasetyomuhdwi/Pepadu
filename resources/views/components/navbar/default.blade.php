@@ -1,12 +1,10 @@
-@props(['infoUpdate' => '17/11/2025, 23:39 WITA'])
-
-<div class="navbar navbar-expand-lg  navbar-light bg-white shadow-sm">
+<div class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded-bottom-2">
     <div class="d-flex flex-column container-fluid">
         <div class="container d-flex d-lg-block align-items-center align-items-lg-none">
             <div class="container-fluid d-flex flex-column flex-lg-row justify-content-lg-between gap-lg-0 gap-3 px-0">
                 {{-- Logo --}}
                 <div class="d-flex justify-content-center justify-content-lg-start align-items-center side-header">
-                    <x-logo src="{{ URL::asset('/img/logo-horizontal.svg') }}" />
+                    <x-logo src="{{ $logo }}" />
                 </div>
                 {{-- Search Box --}}
                 <div class="d-lg-flex d-none align-items-center">
@@ -43,46 +41,21 @@
         </div>
         <div class="container">
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
                     <li class="nav-item fs-6">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
 
-                    <x-navbar.mega-menu.nav-item>
-                        <x-slot:title>
-                            Layanan Publik
-                        </x-slot>
-                        <x-slot:content>
-                            <x-navbar.mega-menu.contents.layanan-publik />
-                        </x-slot>
-                    </x-navbar.mega-menu.nav-item>
-
-                    <x-navbar.mega-menu.nav-item>
-                        <x-slot:title>
-                            Pembayaran & Transaksi
-                        </x-slot>
-                        <x-slot:content>
-                            <x-navbar.mega-menu.contents.pembayaran-transaksi />
-                        </x-slot>
-                    </x-navbar.mega-menu.nav-item>
-
-                    <x-navbar.mega-menu.nav-item>
-                        <x-slot:title>
-                            Data & Informasi Publik
-                        </x-slot>
-                        <x-slot:content>
-                            <x-navbar.mega-menu.contents.data-informasi-publik />
-                        </x-slot>
-                    </x-navbar.mega-menu.nav-item>
-
-                    <x-navbar.mega-menu.nav-item>
-                        <x-slot:title>
-                            Profil Daerah & Pemerintahan
-                        </x-slot>
-                        <x-slot:content>
-                            <x-navbar.mega-menu.contents.profil-daerah-pemerintahan />
-                        </x-slot>
-                    </x-navbar.mega-menu.nav-item>
+                    @foreach ($navMenu as $items)
+                        <x-navbar.mega-menu.nav-item>
+                            <x-slot:title>
+                                {{ $items['title'] }}
+                            </x-slot>
+                            <x-slot:content>
+                                <x-navbar.mega-menu.contents.nav-item-content :contents="$items['contents']" />
+                            </x-slot>
+                        </x-navbar.mega-menu.nav-item>
+                    @endforeach
                 </ul>
 
             </div>

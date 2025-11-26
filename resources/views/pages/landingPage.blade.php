@@ -5,22 +5,23 @@
 @endsection
 
 @section('navbar')
-    @include('components.navbar.default')
+    <x-NavBar infoUpdate="17/11/2025, 23:39 WITA" :logo="$logoHorizontal" />
 @endsection
 
 @section('main')
     {{-- * Hero * --}}
-    <div class="d-md-flex mt-md-4" style="margin-top:127px; height: 520px">
+    <div class="d-md-flex mt-md-4 hero">
         <div class="container-md px-md-2.5 mt-md-20">
-            <div class="container col-xl-10 col-xxl-8 h-100 d-md-flex align-items-center justify-content-center">
+            <div
+                class="container col-md-10 col-xxl-8 h-100 d-md-flex align-items-center justify-content-center justify-content-md-between p-md-0">
                 <div class="row align-items-center g-lg-5 h-md-100">
                     <div class="col-lg-7 text-center text-lg-start p-0 mt-0">
-                        <x-logo src="http://localhost:8000/img/logo-horizontal.svg" height="150px" href="" />
+                        <x-logo src="{{ $logoHorizontal }}" height="150px" href="" />
 
                         <p class="col fs-6">Satu Semangat, Satu Platform, Menuju Pemerintahan
                             Digital Lombok Tengah yang MASMIRAH</p>
 
-                        <div class="d-flex w-100 gap-2" style="height: 8px">
+                        <div class="d-flex justify-content-center justify-content-md-start w-100 gap-2" style="height: 8px">
                             <span class="bg-primary h-100 rounded-4" style="width: 11%"></span>
                             <span class="bg-secondary h-100 rounded-4" style="width: 4%"></span>
                         </div>
@@ -35,8 +36,8 @@
     {{-- * Hero * --}}
 
     {{-- * Background Hero * --}}
-    <div class="position-absolute top-0 d-flex w-100 z-n1" style="left:22%; height: 700px;">
-        <img class="img-fluid flex-fill" src="{{ URL::asset('/img/bg-hero.png') }}" alt="bg hero" style="max-width:110%">
+    <div class="position-absolute top-0 d-flex z-n1 bg-hero w-80 overflow-hidden">
+        <img class="img-fluid flex-fill" src="{{ $bgHero }}" alt="bg hero" style="max-width:250%">
     </div>
     {{-- * Background Hero * --}}
 
@@ -45,10 +46,11 @@
         <div class="container-fluid h-100 bg-white shadow rounded-4 p-4">
             <p class="w-100 text-center fs-6">Kolaborasi dengan Dinas</p>
             <hr class="my-1">
-            <x-swiper-slide />
+            <x-SwiperSlide :items="$itemsDinas" />
             <hr class="my-1">
         </div>
     </div>
+    {{-- * Kolaborasi Dinas * --}}
 @endsection
 
 @section('jsInject')
@@ -59,6 +61,22 @@
                 delay: 4000,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
+            },
+            slidesPerView: 1,
+            //   spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
             },
             loop: true,
         });
