@@ -5,7 +5,7 @@
 @endsection
 
 @section('navbar')
-    <x-NavBar infoUpdate="17/11/2025, 23:39 WITA" :logo="$logoHorizontal" />
+    <x-NavBar infoUpdate="17/11/2025, 23:39 WITA" :logo="$logoHorizontal" :navMenu="$navMenu" />
 @endsection
 
 @section('main')
@@ -101,4 +101,8 @@
             trigger: 'focus'
         }))
     </script>
+@endsection
+
+@section('footer')
+    <x-Footer :navMenu="$navMenu" />
 @endsection

@@ -3,7 +3,18 @@
     --bs-secondary:#F2AC84 !important;
     --bs-nav-link-font-size: 0.8rem;
     --bs-white:#FBFBFE;
+    --bs-text:#050315;
     --card-border-color: #6f42c1;
+    --bs-gray-default:#A4A7AE;
+}
+.text-gray-600{
+    color:#535862;
+}
+
+.text-body-strong{
+    font-size: 0.90rem;
+    line-height: 140%;
+    font-weight: 600;
 }
 
 @media (min-width: 1200px) {
@@ -23,8 +34,7 @@
 .fs-body-small{
     font-size: 0.7rem !important;
     line-height: 140% !important;
-    font-weight: normal !important;
-    text-align: center;
+    font-weight: normal;
 }
 
 .custom-popover {
@@ -157,4 +167,18 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; */
+}
+.sosmed-link{
+    color:var(--bs-gray-default);
+    transition: all 0.3s ease-in-out;
+}
+
+.link-footer{
+    color:var(--bs-text);
+    transition: all 0.3s ease-in-out;
+}
+.sosmed-link:hover, .link-footer:hover{
+    transform: translateX(-5px);
+    font-weight: 600;
+    color: var(--bs-primary);
 }
