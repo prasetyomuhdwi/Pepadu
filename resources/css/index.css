@@ -1,14 +1,23 @@
 :root{
     --bs-primary:#483BCB !important;
     --bs-secondary:#F2AC84 !important;
+    --bs-secondary-alt:#F5F5FE !important;
     --bs-nav-link-font-size: 0.8rem;
     --bs-white:#FBFBFE;
     --bs-text:#050315;
     --card-border-color: #6f42c1;
     --bs-gray-default:#A4A7AE;
+    --bs-tag1:#3498DB;
+    --bs-tag2:#9B59B6;
+    --bs-tag3:#E67E22;
+    --bs-tag4:#2ECC71;
 }
 .text-gray-600{
     color:#535862;
+}
+
+.bg-secondary-alt{
+    background-color: var(--bs-secondary-alt);
 }
 
 .text-body-strong{
@@ -25,9 +34,22 @@
 @media (min-width: 992px) {
     .search-box{
         width: 300px;
-        height: 40px;
+        height: 50px;
     }
 }
+.search-input {
+    height: 50px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
 .bg-dropdown-menu{
     background-color: #EAEAFB;
 }
@@ -181,4 +203,39 @@
     transform: translateX(-5px);
     font-weight: 600;
     color: var(--bs-primary);
+}
+.data-detail{
+    width:162.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-hint .bi-question-circle-fill{
+    color: var(--bs-gray-default)
+
+}
+
+.btn-hint:hover .bi-question-circle-fill{
+    color:rgba(13,10,253,1)
+}
+
+.btn-hint:focus .bi-question-circle-fill{
+    color:rgba(13,10,253,1)
+}
+
+.popover .list-group-item{
+    color:#fff;
+}
+
+.popover .list-group-item.tag1 {
+    background-color: var(--bs-tag1);
+}
+.popover .list-group-item.tag2 {
+    background-color: var(--bs-tag2);
+}
+.popover .list-group-item.tag3 {
+    background-color: var(--bs-tag3);
+}
+.popover .list-group-item.tag4 {
+    background-color: var(--bs-tag4);
 }

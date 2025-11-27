@@ -51,6 +51,42 @@
         </div>
     </div>
     {{-- * Kolaborasi Dinas * --}}
+
+    <div class="container py-4">
+
+        {{-- 1. WIDGET LAYANAN --}}
+        <section class="mb-5">
+            {{-- Memanggil komponen untuk bagian widget layanan --}}
+            <x-widget_layanan />
+        </section>
+
+        <hr>
+
+        {{-- 2. INFORMASI PUBLIK (STATISTIK) --}}
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="mb-0">Informasi Publik (Statistik)</h2>
+                <a href="#" class="text-decoration-none">Lihat Semua</a>
+            </div>
+            {{-- Memanggil komponen untuk bagian statistik --}}
+            <x-info_statistik />
+        </section>
+
+        <hr>
+
+        {{-- 3. INFORMASI PUBLIK (GRAFIS) --}}
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="mb-0">Informasi Publik (Grafis)</h2>
+                <a href="#" class="text-decoration-none">Lihat Semua</a>
+            </div>
+            {{-- Memanggil komponen untuk bagian grafis --}}
+            <div class="overflow-x-auto" style="height: 315px">
+                <x-info_grafis />
+            </div>
+        </section>
+
+    </div>
 @endsection
 
 @section('jsInject')
