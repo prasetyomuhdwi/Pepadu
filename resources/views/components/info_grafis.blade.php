@@ -1,5 +1,6 @@
 <div class="d-flex gap-3" style="height: 300px; width:120vw">
 
+    {{-- // TODO: Add Link to Page --}}
     {{-- Card 1: Dukcapil (Pie Chart Placeholder) --}}
     <div class="d-flex" style="height:100%; width:360px">
         <div class="card p-3 shadow-sm flex-fill rounded-3">
@@ -8,7 +9,7 @@
             </h5>
 
             <div class="d-flex align-items-center h-100 gap-2">
-                {{-- Placeholder untuk Donut Chart (ChartJS/ApexCharts akan menggantikannya) --}}
+                {{-- // TODO: Placeholder untuk Donut Chart (ChartJS/ApexCharts akan menggantikannya) --}}
                 <div class="chart-placeholder flex-fill"
                     style="width: 122px !important; height: 122px; border-radius: 50%; background: conic-gradient(#007bff 0 80%, #28a745 80% 90%, #dc3545 90% 100%);">
                     <div
@@ -36,7 +37,7 @@
             </h5>
 
             <div class="d-flex align-items-center h-100 gap-2">
-                {{-- Placeholder untuk Donut Chart --}}
+                {{-- // TODO: Placeholder untuk Donut Chart --}}
                 <div class="chart-placeholder flex-fill"
                     style="width: 122px !important; height: 122px; border-radius: 50%; background: conic-gradient(#0d6efd 0 80%, #ccc 80% 100%);">
                     <div
@@ -71,7 +72,7 @@
                     <h6 class="fw-bold">38.333.255.000</h6>
                 </div>
 
-                {{-- Placeholder untuk Donut Chart --}}
+                {{-- // TODO: Placeholder untuk Donut Chart --}}
                 <div class="chart-placeholder"
                     style="width: 122px !important; height: 122px; border-radius: 50%; background: conic-gradient(#0d6efd 0 81.33%, #ccc 81.33% 100%);">
                     <div
@@ -98,7 +99,7 @@
                     <h6 class="fw-bold">39.672.835.000</h6>
                 </div>
 
-                {{-- Placeholder untuk Donut Chart --}}
+                {{-- // TODO: Placeholder untuk Donut Chart --}}
                 <div class="chart-placeholder"
                     style="width: 122px !important; height: 122px; border-radius: 50%; background: conic-gradient(#0d6efd 0 89.16%, #ccc 89.16% 100%);">
                     <div

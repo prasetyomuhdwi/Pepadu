@@ -3,9 +3,6 @@
         <h4>Widget Layanan</h4>
         <div class="input-group" style="max-width: 350px;">
             <x-inputs.search-box />
-            {{-- <input type="text" class="form-control" placeholder="Cari Layanan..." aria-label="Cari Layanan"> --}}
-            {{-- <span class="input-group-text"><i class="bi bi-search"></i></span> --}}
-            {{-- <button class="btn btn-outline-secondary" type="button"><i class="bi bi-question-circle"></i></button> --}}
         </div>
     </div>
 
@@ -36,7 +33,7 @@
 
             @foreach ($layanan as $item)
                 <div class="col">
-                    {{-- Item Layanan --}}
+                    {{-- // TODO: Create Component Item Layanan --}}
                     <a href="#"
                         class="d-flex align-items-center p-3 border rounded-3 text-decoration-none text-dark hover-shadow-sm">
                         <i class="bi {{ $item['icon'] }} fs-5 me-3 text-primary"></i>

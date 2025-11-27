@@ -19,7 +19,6 @@
             <div class="col">
                 <div class="row gap-3 align-items-start justify-content-center">
 
-                    {{-- TODO: buat dynamic component card nav-item --}}
                     @foreach ($contents as $item)
                         <a href="{{ $item['href'] }}" class="col-3 card-nav-item text-decoration-none rounded-2">
                             <div class="h-100 d-flex position-relative">

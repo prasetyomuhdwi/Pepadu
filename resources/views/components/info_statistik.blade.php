@@ -14,7 +14,7 @@
         <div class="col">
             <div class="card p-3 text-center border-0 shadow-sm rounded-3">
                 <div class="d-flex flex-column align-items-center gap-2">
-                    {{-- Placeholder Ikon/Avatar --}}
+                    {{-- // TODO: Placeholder Ikon/Avatar --}}
                     <div class="rounded-circle bg-{{ $item['color'] }} bg-opacity-10 p-2 d-flex justify-content-center align-items-center"
                         style="width: 48px; height: 48px;">
                         <i class="bi {{ $item['icon'] }} fs-5 text-{{ $item['color'] }}"></i>
